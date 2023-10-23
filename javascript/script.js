@@ -33,15 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function initModals(modalActiveSelector) {
     const modals = [...document.querySelectorAll('.modal')];
-    let interactiveElements;
 
     if (!modals.length) { 
       return;
     }
 
     modals.forEach((modal) => {
-      
-      interactiveElements = [...modal.querySelectorAll('input, button')];
+      const interactiveElements = [...modal.querySelectorAll('input, button')];
 
       tabindexHandler(interactiveElements, modalActiveSelector)    
     })
