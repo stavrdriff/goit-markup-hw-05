@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  
   function initModalTriggers() {
     const buttonsArr = [...document.querySelectorAll('[data-action="modalTrigger"]')];
     const modalActiveSelector = 'show';
