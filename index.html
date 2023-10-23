@@ -56,7 +56,7 @@
       style="background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/hero-image-1280.jpg);">
       <div class="container">
         <h1 class="hero__title">Effective Solutions for Your Business</h1>
-        <button class="hero__action" type="button">Order Service</button>
+        <button class="hero__action" type="button" data-action="modalTrigger">Order Service</button>
       </div>
     </section>
     <section class="section">
@@ -390,6 +390,14 @@
       <!-- </div> -->
     </div>
   </footer>
+
+  <div class="modal">
+    <input type="text">
+    <button data-action="modalTrigger">trigger</button>
+  </div>
+
+
+  <script src="./javascript/script.js"></script>
 </body>
 
 </html>
