@@ -25,6 +25,10 @@ body {
   color: var(--primary-text-color);
   background-color: var(--body-background-color);
   letter-spacing: 0.02em;
+  overflow-x: hidden;
+}
+body.is-blocked {
+  overflow: hidden;
 }
 
 main {
@@ -208,7 +212,7 @@ h3 {
   color: #ffffff;
   margin: 0 auto 48px;
 }
-.hero__action {
+.hero__action, .form-primary__action {
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   margin: 0 auto;
@@ -221,8 +225,9 @@ h3 {
   letter-spacing: 0.04em;
   border-radius: 4px;
   border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.hero__action:focus, .hero__action:hover {
+.hero__action:focus, .form-primary__action:focus, .hero__action:hover, .form-primary__action:hover {
   background-color: #404bbf;
 }
 
@@ -383,4 +388,86 @@ h3 {
   margin-bottom: 1rem;
   font-weight: 500;
   color: #fff;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal.is-open {
+  transform: translateX(0);
+}
+.modal.is-open .modal__overlay {
+  opacity: 1;
+}
+.modal__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__content {
+  max-width: 408px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 1.5rem;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+}
+.modal__close-button {
+  padding: 0;
+  margin: 0 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #E7E9FC;
+}
+.modal__close-button svg {
+  fill: #2E2F42;
+}
+
+.form-primary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-primary__label {
+  display: block;
+}
+.form-primary__input {
+  display: block;
+  width: 100%;
+}
+.form-primary__textarea {
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  resize: none;
+}
+.form-primary__checkbox-label {
+  color: #8E8F99;
+  font-size: 0.75rem;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+}
+.form-primary__action {
+  margin-top: 1rem;
+  min-width: 169px;
 }/*# sourceMappingURL=styles.css.map */
