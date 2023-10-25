@@ -570,6 +570,9 @@ h3 {
   border: none;
   fill: #404bbf;
 }
+.form-primary__checkbox:checked + .form-primary__checkbox-label .form-primary__checked-icon {
+  fill: #F4F4FD;
+}
 .form-primary__checkbox-label {
   color: #8E8F99;
   font-size: 0.75rem;
@@ -593,7 +596,8 @@ h3 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-primary__checked-icon {
-  fill: #F4F4FD;
+  fill: transparent;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-primary__action {
   margin-top: 1rem;
