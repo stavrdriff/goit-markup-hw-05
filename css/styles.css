@@ -577,7 +577,7 @@ h3 {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
-.form-primary__checkbox-label a {
+.form-primary__link {
   color: var(--link-color);
 }
 .form-primary__checkbox-pseudo {
@@ -587,13 +587,10 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
+  fill: #F4F4FD;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-primary__checked-icon {
-  fill: #fff;
 }
 .form-primary__action {
   margin-top: 1rem;
