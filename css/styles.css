@@ -513,6 +513,9 @@ h3 {
 .form-primary__wrapper--mb16 {
   margin-bottom: 1rem;
 }
+.form-primary__wrapper--mb24 {
+  margin-bottom: 1.5rem;
+}
 .form-primary__label {
   margin-bottom: 0.25rem;
   display: block;
@@ -551,11 +554,15 @@ h3 {
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-primary__textarea {
+  font-size: 0.75rem;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   padding: 0.5rem 1rem;
   display: block;
   width: 100%;
   min-height: 120px;
   resize: none;
+  color: rgba(46, 47, 66, 0.4);
 }
 .form-primary__checkbox-label {
   color: #8E8F99;
