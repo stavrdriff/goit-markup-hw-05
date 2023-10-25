@@ -390,7 +390,7 @@ h3 {
   max-width: 264px;
   color: var(--color-footer-text);
 }
-.footer__links-title, .form-subscribe__label {
+.footer__links-title {
   margin-bottom: 1rem;
   font-weight: 500;
   color: #fff;
@@ -400,14 +400,11 @@ h3 {
   flex-grow: 1;
 }
 
-.form-subscribe__label {
-  display: block;
-}
-.form-subscribe__wrapper {
+.form-subscribe {
   display: flex;
   gap: 1.5rem;
 }
-.form-subscribe__wrapper label {
+.form-subscribe label {
   flex-grow: 1;
 }
 .form-subscribe__input {
