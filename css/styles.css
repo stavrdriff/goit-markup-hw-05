@@ -483,9 +483,18 @@ h3 {
   flex-shrink: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #E7E9FC;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__close-button:focus, .modal__close-button:hover {
+  background-color: #404bbf;
+  border: none;
+}
+.modal__close-button:focus svg, .modal__close-button:hover svg {
+  fill: #fff;
 }
 .modal__close-button svg {
   fill: #2E2F42;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-primary {
