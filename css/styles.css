@@ -193,6 +193,12 @@ h3 {
 .navigation__link:focus::after, .navigation__link:hover::after {
   height: 4px;
 }
+.navigation__link.is-active {
+  color: #404BBF;
+}
+.navigation__link.is-active::after {
+  height: 4px;
+}
 
 .address__list {
   display: flex;
