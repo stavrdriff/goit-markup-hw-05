@@ -511,10 +511,10 @@ h3 {
 .form-primary__wrapper {
   margin-bottom: 0.5rem;
 }
-.form-primary__wrapper--mb-rem {
+.form-primary__wrapper--mb16 {
   margin-bottom: 1rem;
 }
-.form-primary__wrapper--mb-one-half-rem {
+.form-primary__wrapper--mb24 {
   margin-bottom: 1.5rem;
 }
 .form-primary__label {
