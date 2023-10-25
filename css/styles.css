@@ -511,12 +511,12 @@ h3 {
   gap: 0.5rem;
 }
 .form-primary__label {
+  margin-bottom: 0.25rem;
   display: block;
   font-size: 0.75rem;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--label-text-color);
-  margin-bottom: 0.25rem;
 }
 .form-primary__input {
   display: block;
