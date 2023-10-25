@@ -404,7 +404,7 @@ h3 {
   display: flex;
   gap: 1.5rem;
 }
-.form-subscribe label {
+.form-subscribe__label {
   flex-grow: 1;
 }
 .form-subscribe__input {
