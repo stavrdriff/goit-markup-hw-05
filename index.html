@@ -447,8 +447,14 @@
         </div>
         <div class="form-primary__wrapper form-primary__wrapper--flex form-primary__wrapper--mb24">
           <input class="form-primary__checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy">
-          <label class="form-primary__checkbox-label" for="user-privacy">I accept the terms and conditions of the <a
-              href="#">Privacy Policy</a></label>
+          <label class="form-primary__checkbox-label" for="user-privacy">
+            <span class="form-primary__checkbox-pseudo">
+              <svg class="form-primary__checked-pseudo" width="16" height="16" aria-hidden="true">
+                <use href="./images/icons.svg#mail" />
+              </svg>
+            </span>
+            I accept the terms and conditions of the <a href="#">Privacy Policy</a>
+          </label>
         </div>
         <button class="form-primary__action" type="submit">Send</button>
       </form>

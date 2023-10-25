@@ -506,6 +506,7 @@ h3 {
 
 .form-primary {
   --label-text-color: #8e8f99;
+  --link-color: #4d5ae5;
 }
 .form-primary__wrapper {
   margin-bottom: 0.5rem;
@@ -564,11 +565,29 @@ h3 {
   resize: none;
   color: rgba(46, 47, 66, 0.4);
 }
+.form-primary__checkbox:checked .form-primary__checkbox-pseudo {
+  background-color: #404bbf;
+  border: none;
+  fill: #404bbf;
+}
 .form-primary__checkbox-label {
   color: #8E8F99;
   font-size: 0.75rem;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
+}
+.form-primary__checkbox-label a {
+  color: var(--link-color);
+}
+.form-primary__checkbox-pseudo {
+  width: 1rem;
+  height: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
 }
 .form-primary__action {
   margin-top: 1rem;
