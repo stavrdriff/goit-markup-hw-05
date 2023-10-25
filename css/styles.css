@@ -443,9 +443,6 @@ h3 {
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
   visibility: hidden;
@@ -456,7 +453,12 @@ h3 {
   visibility: visible;
 }
 .modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 408px;
+  min-height: 584px;
   display: flex;
   flex-direction: column;
   margin: auto;
