@@ -508,7 +508,6 @@ h3 {
   --label-text-color: #8e8f99;
 }
 .form-primary__wrapper {
-  position: relative;
   margin-bottom: 0.5rem;
 }
 .form-primary__label {
@@ -518,6 +517,9 @@ h3 {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--label-text-color);
+}
+.form-primary__input-wrapper {
+  position: relative;
 }
 .form-primary__input {
   display: block;
